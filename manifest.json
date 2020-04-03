@@ -8,5 +8,9 @@
         "default_icon": "tiny-face.jpg",
         "default_popup": "popup.html"
     },
-    "permissions": ["activeTab"]
+    "background":{
+        "scripts":["popup.js"],
+        "persistent":false
+    },
+    "permissions": ["activeTab", "storage"]
 }
