@@ -1,16 +1,22 @@
 {
-    "manifest_version": 2,
     "name": "tutorial app",
+    "version": "1.0",
     "description": "Quick background color changer",
-    "version": "1.0.0",
-    "icons": {"128":"medium-face.jpg"},
-    "browser_action":{
-        "default_icon": "tiny-face.jpg",
-        "default_popup": "popup.html"
-    },
+    "permissions": ["activeTab", "storage"],
     "background":{
-        "scripts":["popup.js"],
+        "scripts": ["background.js"],
         "persistent":false
     },
-    "permissions": ["activeTab", "storage"]
+    "page_action":{
+        "default_popup": "popup.html",
+        "default_icon":{
+            "16": "images/tiny-face.png",
+            "128":"images/medium-face.png"
+        }
+    },
+    "icons":{
+        "16": "images/tiny-face.png",
+        "128":"images/medium-face.png"
+    },
+    "manifest_version": 2
 }
