@@ -13,6 +13,7 @@ due to no comments in json files the comment information will be stored here.
     //extensions need permissions to have certain functionallity.
     //Storage is required to store user settings.
     //declarative content says when the extension will be valid to use without host permisssion or injecting a content script***.
+    //activeTab allows the extension temporary access to the tabs api.
 
     "background":{ // sets the background script that will allow the extension to listen to and respond to events.
         "scripts": ["background.js"], // tells the extension which file to reference

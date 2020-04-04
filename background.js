@@ -5,9 +5,9 @@ chrome.runtime.onInstalled.addListener(function(){ // a listener that fires when
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function(){ // requires declarativeContent permission on manifest.
       chrome.declarativeContent.onPageChanged.addRules([{
         conditions: [new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: {hostEquals: 'developer.chrome.com'}, // if in one of these webpages the extension is usable.
+          pageUrl: {hostEquals: 'developer.chrome.com'}, // defines where the extension is usable.
         })],
-            actions: [new chrome.declarativeContent.ShowPageAction()]
+            actions: [new chrome.declarativeContent.ShowPageAction()] // if in one of these webpages the extension is usable.
       }]);
     });
   });
