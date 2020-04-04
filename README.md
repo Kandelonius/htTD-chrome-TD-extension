@@ -20,7 +20,7 @@ due to no comments in json files the comment information will be stored here.
         "persistent":false // tells the extension that the background is non-persistent
     },
 
-    "options_page": "options.html",
+    "options_page": "options.html", // allows for the options page
 
     "page_action":{ // puts icons on the toolbar.
         "default_popup": "popup.html", // popup type icon
