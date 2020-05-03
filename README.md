@@ -33,6 +33,7 @@ due to no comments in json files the comment information will be stored here.
     "icons":{ // extension management page icons.
         "16": "images/tiny-face.png",
         "128":"images/medium-face.png"
+
     },
 
     "manifest_version": 2
@@ -40,3 +41,4 @@ due to no comments in json files the comment information will be stored here.
 
 <!--***Content Scripts
 Content scripts are files that run in the context of web pages. By using the standard Document Object Model (DOM), they are able to read details of the web pages the browser visits, make changes to them and pass information to their parent extension.-->
+Should be an app that will take a website with adequately large on screen text content and use the aggressive words and convert them to offensive towers and turn defensive words into defensive towers.
